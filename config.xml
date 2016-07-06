@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.commontime.md10.client" version="0.5.6" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <description>
+        mDesign 10 Client
+    </description>
+    <author email="leon.revill@commontime.com">
+        Leon Revill for Commontime Ltd
+    </author>
+    <content src="index.html" />
+
+    <plugin name="cordova-plugin-whitelist" version="1"/>
+    <gap:plugin name="cordova-plugin-battery-status" />
+    <gap:plugin name="cordova-plugin-media-capture" />
+    <gap:plugin name="cordova-plugin-console" />
+    <gap:plugin name="cordova-plugin-contacts" />
+    <gap:plugin name="cordova-plugin-device" />
+    <gap:plugin name="cordova-plugin-device-motion" />
+    <gap:plugin name="cordova-plugin-device-orientation" />
+    <gap:plugin name="cordova-plugin-dialogs" />
+    <gap:plugin name="cordova-plugin-file" />
+    <gap:plugin name="cordova-plugin-file-transfer" />
+    <gap:plugin name="cordova-plugin-geolocation" />
+    <gap:plugin name="com.commontime.cordova.geofence" spec="https://github.com/commontime/com.commontime.cordova.geofence.git" />
+    <gap:plugin name="cordova-plugin-globalization" />
+    <gap:plugin name="cordova-plugin-inappbrowser" />
+    <gap:plugin name="cordova-plugin-network-information" />
+    <gap:plugin name="cordova-plugin-splashscreen" />
+    <gap:plugin name="cordova-plugin-vibration" />
+    <gap:plugin name="org.apache.cordova.statusbar" spec="0.1.4" source="pgb" />
+
+    <gap:plugin name="com.telerik.plugins.healthkit" />
+    <gap:plugin name="com.ams.plugins.barcodescanner" version="2.0.6" />
+    <gap:plugin name="com.verso.cordova.clipboard" version="0.1.0" />
+    <gap:plugin name="io.github.pwlin.cordova.plugins.fileopener2" version="1.0.11" />
+    <gap:plugin name="de.appplant.cordova.plugin.hidden-statusbar-overlay" version="1.2.0" />
+    <gap:plugin name="cordova-plugin-camera" />
+
+    <gap:plugin name="com.commontime.cordova.thumbnail" source="npm" />
+    <gap:plugin name="com.commontime.cordova.beacon" source="npm" />
+    <gap:plugin name="com.commontime.cordova.notification" source="npm" />
+    <gap:plugin name="com.commontime.cordova.audio" source="npm" />
+    <gap:plugin name="com.commontime.cordova.splitscreen" source="npm" />
+    <gap:plugin name="com.commontime.cordova.preferences" source="npm" />
+    <gap:plugin name="com.commontime.cordova.urlhandler" source="npm" >
+        <param name="URL_SCHEME" value="client" />
+    </gap:plugin>
+
+    <preference name="phonegap-version" value="cli-5.2.0" />
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="StatusBarBackgroundColor" value="#FFFFFF" />
+    <preference name="StatusBarStyle" value="default" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="Orientation" value="default" />
+    <preference name="android-minSdkVersion" value="15" />
+    <preference name="android-build-tool" value="gradle" />
+    <preference name="Orientation" value="all" />
+    <preference name="android-windowSoftInputMode" value="adjustResize" />
+    <preference name="deployment-target" value="8.0" />
+    <icon src="icon.png" />
+    <gap:splash src="portrait-xhdpi.png" gap:platform="android" gap:qualifier="port-xhdpi" />
+    <gap:splash src="landscape-xhdpi.png" gap:platform="android" gap:qualifier="land-xhdpi" />
+    <gap:splash src="Default-Portrait@2x.png" gap:platform="ios" width="1536" height="2048" />
+    <gap:splash src="Default-Landscape@2x.png" gap:platform="ios" width="2048" height="1536" />
+    <gap:splash src="Default-736h.png" gap:platform="ios" width="1242" height="2208" />
+    <gap:splash src="Default-Landscape-736h.png" gap:platform="ios" width="2208" height="1242" />
+    <access origin="*" />
+    <allow-navigation href="*" />
+</widget>
